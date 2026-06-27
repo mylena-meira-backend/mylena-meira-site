@@ -1,0 +1,1120 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mylena Meira — Especialista em Remoção de Estrias</title>
+  <meta name="description" content="Tratamentos especializados para remoção de estrias com tecnologia avançada e resultados comprovados. Agende sua consulta online.">
+  <meta property="og:title" content="Mylena Meira — Especialista em Remoção de Estrias">
+  <meta property="og:description" content="Resultados transformadores para a sua autoestima. Agende agora.">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Font Awesome para ícones -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<!-- ============================================================
+     LOGO SVG inline (baseado na identidade visual da marca)
+     ============================================================ -->
+<svg id="mm-logo-def" style="display:none" xmlns="http://www.w3.org/2000/svg">
+  <symbol id="mm-logo" viewBox="0 0 100 100">
+    <!-- Ornamento floral -->
+    <g opacity="0.85">
+      <circle cx="50" cy="12" r="3" fill="currentColor" opacity="0.6"/>
+      <line x1="50" y1="9" x2="50" y2="4" stroke="currentColor" stroke-width="0.8" opacity="0.5"/>
+      <line x1="50" y1="9" x2="44" y2="5" stroke="currentColor" stroke-width="0.8" opacity="0.4"/>
+      <line x1="50" y1="9" x2="56" y2="5" stroke="currentColor" stroke-width="0.8" opacity="0.4"/>
+      <ellipse cx="50" cy="12" rx="5" ry="3" fill="none" stroke="currentColor" stroke-width="0.6" opacity="0.3"/>
+    </g>
+    <!-- MM Monograma estilizado -->
+    <text x="50" y="68" font-family="Cormorant Garamond, Georgia, serif"
+          font-size="52" font-weight="300" text-anchor="middle"
+          fill="currentColor" letter-spacing="-4">MM</text>
+    <!-- MYLENA MEIRA -->
+    <text x="50" y="82" font-family="Montserrat, sans-serif"
+          font-size="8.5" font-weight="600" text-anchor="middle"
+          fill="currentColor" letter-spacing="3">MYLENA MEIRA</text>
+    <!-- ESPECIALISTA EM ESTRIA -->
+    <text x="50" y="92" font-family="Montserrat, sans-serif"
+          font-size="4.5" font-weight="400" text-anchor="middle"
+          fill="currentColor" letter-spacing="2" opacity="0.7">ESPECIALISTA EM ESTRIA</text>
+  </symbol>
+</svg>
+
+<!-- ============================================================
+     NAVEGAÇÃO
+     ============================================================ -->
+<nav class="nav" id="main-nav">
+  <div class="container nav-inner">
+    <a href="#" class="nav-logo" aria-label="Mylena Meira">
+      <img src="assets/logo-real.png" class="nav-logo-img" alt="Mylena Meira"
+           onerror="this.src='assets/logo.svg'">
+    </a>
+
+    <ul class="nav-links" role="list">
+      <li><a href="#sobre"       class="nav-link">Sobre</a></li>
+      <li><a href="#servicos"    class="nav-link">Serviços</a></li>
+      <li><a href="#resultados"  class="nav-link">Resultados</a></li>
+      <li><a href="#depoimentos" class="nav-link">Depoimentos</a></li>
+    </ul>
+
+    <a href="#agendamento" class="btn btn-primary nav-cta" data-scroll-to="agendamento">
+      <i class="fa-regular fa-calendar"></i> Agendar Agora
+    </a>
+
+    <button class="nav-hamburger" aria-label="Menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- Menu mobile -->
+<div class="nav-mobile" role="dialog" aria-modal="true">
+  <button id="mobile-close" style="position:absolute;top:2rem;right:2rem;font-size:1.5rem;color:var(--dark)" aria-label="Fechar">
+    <i class="fa-solid fa-xmark"></i>
+  </button>
+  <ul role="list" style="display:flex;flex-direction:column;align-items:center;gap:2rem">
+    <li><a href="#sobre"       class="nav-link">Sobre</a></li>
+    <li><a href="#servicos"    class="nav-link">Serviços</a></li>
+    <li><a href="#resultados"  class="nav-link">Resultados</a></li>
+    <li><a href="#depoimentos" class="nav-link">Depoimentos</a></li>
+    <li style="margin-top:1rem">
+      <a href="#agendamento" class="btn btn-primary">
+        <i class="fa-regular fa-calendar"></i> Agendar Agora
+      </a>
+    </li>
+  </ul>
+</div>
+
+<!-- ============================================================
+     HERO
+     ============================================================ -->
+<section class="hero" id="inicio" aria-label="Apresentação">
+  <div class="hero-bg"></div>
+  <div class="hero-pattern"></div>
+
+  <div class="container">
+    <div class="hero-content">
+      <div class="hero-badge fade-up">
+        <i class="fa-solid fa-star" style="font-size:.7rem"></i>
+        Especialista em Remoção de Estrias
+      </div>
+
+      <h1 class="hero-title fade-up delay-1">
+        Recupere sua
+        <strong>confiança <em>e autoestima</em></strong>
+        com <span class="highlight">resultados reais</span>
+      </h1>
+
+      <p class="hero-desc fade-up delay-2">
+        Tratamentos avançados e personalizados para remoção de estrias,
+        com tecnologia de ponta e o cuidado que você merece.
+      </p>
+
+      <div class="hero-actions fade-up delay-3">
+        <a href="#agendamento" class="btn btn-cream" data-scroll-to="agendamento">
+          <i class="fa-regular fa-calendar-check"></i>
+          Agendar Minha Consulta
+        </a>
+        <a href="#sobre" class="btn btn-outline" style="border-color:rgba(232,213,183,0.3);color:var(--cream)" data-scroll-to="sobre">
+          Conhecer Mais
+        </a>
+      </div>
+
+      <div class="hero-proof fade-up delay-4">
+        <div class="hero-proof-item">
+          <span class="hero-proof-num" data-count="500" data-suffix="+">0</span>
+          <span class="hero-proof-label">Clientes Atendidas</span>
+        </div>
+        <div class="hero-proof-divider"></div>
+        <div class="hero-proof-item">
+          <span class="hero-proof-num" data-count="98" data-suffix="%">0</span>
+          <span class="hero-proof-label">Satisfação</span>
+        </div>
+        <div class="hero-proof-divider"></div>
+        <div class="hero-proof-item">
+          <span class="hero-proof-num" data-count="5" data-suffix="+">0</span>
+          <span class="hero-proof-label">Anos de Experiência</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Foto principal da Mylena (lado direito do hero) -->
+  <div class="hero-photo" aria-hidden="true">
+    <div class="hero-photo-inner">
+      <img src="assets/mylena-foto.jpg"
+           alt="Mylena Meira — Especialista em Remoção de Estrias"
+           class="hero-photo-img"
+           onerror="this.parentElement.style.background='linear-gradient(160deg,var(--bordeaux-dark),var(--bordeaux))'">
+      <div class="hero-photo-overlay"></div>
+    </div>
+    <div class="hero-photo-badge">
+      <i class="fa-solid fa-award"></i>
+      <span>Especialista<br>Certificada</span>
+    </div>
+  </div>
+
+  <div class="hero-scroll" aria-hidden="true">
+    <div class="hero-scroll-line"></div>
+    <span>Scroll</span>
+  </div>
+</section>
+
+<!-- ============================================================
+     MANIFESTO / BANNER DA MYLENA
+     ============================================================ -->
+<section class="manifesto" aria-label="A história de Mylena Meira">
+  <div class="manifesto-inner">
+    <!-- Coluna esquerda: foto -->
+    <div class="manifesto-photo-col">
+      <img src="assets/mylena-banner.jpg"
+           alt="Mylena Meira — Tudo começou com um sonho"
+           class="manifesto-img">
+      <div class="manifesto-overlay" aria-hidden="true"></div>
+    </div>
+    <!-- Coluna direita: texto -->
+    <div class="manifesto-content">
+      <p class="manifesto-pre">Tudo começou com um</p>
+      <h2 class="manifesto-sonho">sonho.</h2>
+      <div class="manifesto-divider" aria-hidden="true"></div>
+      <p class="manifesto-text">
+        Hoje transformo<br>
+        <strong>autoestima</strong><br>
+        através do meu trabalho. <span aria-label="coração">♡</span>
+      </p>
+      <a href="#agendamento" class="btn btn-gold manifesto-cta" data-scroll-to="agendamento">
+        Quero minha transformação
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     SOBRE
+     ============================================================ -->
+<section class="sobre" id="sobre" aria-labelledby="sobre-title">
+  <div class="container">
+    <div class="sobre-grid">
+      <!-- Imagem -->
+      <div class="sobre-image-wrap fade-up">
+        <div class="sobre-image-frame">
+          <img src="assets/mylena-foto.jpg"
+               alt="Mylena Meira"
+               style="width:100%;height:100%;object-fit:cover;object-position:center top"
+               onerror="this.style.display='none';this.parentElement.style.background='linear-gradient(160deg,var(--bordeaux-dark),var(--bordeaux))'">
+          <div class="sobre-image-accent"></div>
+        </div>
+        <div class="sobre-badge">
+          <span class="sobre-badge-num" data-count="5" data-suffix="+">5+</span>
+          <span class="sobre-badge-label">Anos de<br>Experiência</span>
+        </div>
+      </div>
+
+      <!-- Conteúdo -->
+      <div class="sobre-content">
+        <span class="section-label fade-up">Sobre Mim</span>
+        <h2 class="section-title fade-up delay-1" id="sobre-title">
+          Transformando vidas com <em>dedicação e expertise</em>
+        </h2>
+
+        <p class="sobre-text fade-up delay-2">
+          Sou <strong>Mylena Meira</strong>, especialista em remoção de estrias com mais de 5 anos de experiência
+          dedicados exclusivamente ao tratamento e eliminação de estrias. Minha jornada começou quando
+          percebi o impacto profundo que essas marcas têm na autoestima das mulheres.
+        </p>
+        <p class="sobre-text fade-up delay-3">
+          Utilizando tecnologia de ponta e protocolos exclusivos, desenvolvi uma metodologia que
+          combina eficácia clínica com um atendimento humanizado e acolhedor. Cada cliente recebe
+          um plano de tratamento 100% personalizado.
+        </p>
+
+        <div class="divider fade-up delay-3">
+          <span class="divider-icon"><i class="fa-solid fa-seedling"></i></span>
+        </div>
+
+        <div class="sobre-values fade-up delay-4">
+          <div class="sobre-value">
+            <div class="sobre-value-icon"><i class="fa-solid fa-shield-halved"></i></div>
+            <div class="sobre-value-text">
+              <strong>Segurança Total</strong>
+              <span>Protocolos certificados e seguros</span>
+            </div>
+          </div>
+          <div class="sobre-value">
+            <div class="sobre-value-icon"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+            <div class="sobre-value-text">
+              <strong>Tecnologia Avançada</strong>
+              <span>Equipamentos de última geração</span>
+            </div>
+          </div>
+          <div class="sobre-value">
+            <div class="sobre-value-icon"><i class="fa-solid fa-heart"></i></div>
+            <div class="sobre-value-text">
+              <strong>Atendimento Exclusivo</strong>
+              <span>Cada cliente, um plano único</span>
+            </div>
+          </div>
+          <div class="sobre-value">
+            <div class="sobre-value-icon"><i class="fa-solid fa-chart-line"></i></div>
+            <div class="sobre-value-text">
+              <strong>Resultados Comprovados</strong>
+              <span>Fotos reais, clientes reais</span>
+            </div>
+          </div>
+        </div>
+
+        <a href="#agendamento" class="btn btn-primary fade-up delay-4" style="margin-top:2.5rem" data-scroll-to="agendamento">
+          Agendar Avaliação Gratuita
+          <i class="fa-solid fa-arrow-right"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     SERVIÇOS
+     ============================================================ -->
+<section class="servicos" id="servicos" aria-labelledby="servicos-title">
+  <div class="container">
+    <div class="servicos-header">
+      <span class="section-label fade-up">Tratamentos</span>
+      <h2 class="section-title fade-up delay-1" id="servicos-title">
+        Procedimentos <em>especializados</em>
+      </h2>
+      <p class="section-subtitle fade-up delay-2" style="color:rgba(232,213,183,0.6);margin-inline:auto">
+        Cada tratamento é desenvolvido com protocolos exclusivos para máxima eficácia e segurança.
+      </p>
+    </div>
+
+    <!-- Cards carregados via API pelo booking.js -->
+    <div class="servicos-grid" id="servicos-section-grid">
+      <!-- Skeleton loading -->
+      <div class="servico-card skeleton">
+        <div class="servico-icon"></div>
+        <div class="servico-name" style="height:1.3rem;background:rgba(232,213,183,0.08);width:70%"></div>
+        <div class="servico-desc" style="height:3rem;background:rgba(232,213,183,0.05);margin-top:.5rem"></div>
+        <div class="servico-footer" style="margin-top:1rem">
+          <div style="height:1.4rem;background:rgba(201,169,110,0.1);width:40%"></div>
+        </div>
+      </div>
+      <div class="servico-card skeleton" style="opacity:.7">
+        <div class="servico-icon"></div>
+        <div class="servico-name" style="height:1.3rem;background:rgba(232,213,183,0.08);width:60%"></div>
+        <div class="servico-desc" style="height:3rem;background:rgba(232,213,183,0.05);margin-top:.5rem"></div>
+      </div>
+      <div class="servico-card skeleton" style="opacity:.4">
+        <div class="servico-icon"></div>
+        <div class="servico-name" style="height:1.3rem;background:rgba(232,213,183,0.08);width:75%"></div>
+        <div class="servico-desc" style="height:3rem;background:rgba(232,213,183,0.05);margin-top:.5rem"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     COMO FUNCIONA
+     ============================================================ -->
+<section class="como-funciona" id="como-funciona" aria-labelledby="como-title">
+  <div class="container">
+    <div class="como-grid">
+      <div>
+        <span class="section-label fade-up">Processo</span>
+        <h2 class="section-title fade-up delay-1" id="como-title">
+          Do agendamento ao <em>resultado</em>
+        </h2>
+        <p class="section-subtitle fade-up delay-1">
+          Um fluxo simples e transparente para que você foque apenas na sua transformação.
+        </p>
+
+        <div class="como-steps" style="margin-top:3rem">
+          <div class="como-step fade-up delay-1">
+            <div class="como-step-num">1</div>
+            <div class="como-step-content">
+              <strong>Agende pelo site</strong>
+              <p>Escolha o procedimento, a data e o horário que mais combinam com sua rotina. Processo 100% online, em menos de 2 minutos.</p>
+            </div>
+          </div>
+          <div class="como-step fade-up delay-2">
+            <div class="como-step-num">2</div>
+            <div class="como-step-content">
+              <strong>Confirmação imediata</strong>
+              <p>Seu agendamento aparece instantaneamente no nosso app. Você recebe confirmação via WhatsApp com todos os detalhes.</p>
+            </div>
+          </div>
+          <div class="como-step fade-up delay-3">
+            <div class="como-step-num">3</div>
+            <div class="como-step-content">
+              <strong>Avaliação personalizada</strong>
+              <p>Na primeira consulta, realizamos uma avaliação completa das suas estrias e elaboramos seu plano de tratamento individual.</p>
+            </div>
+          </div>
+          <div class="como-step fade-up delay-4">
+            <div class="como-step-num">4</div>
+            <div class="como-step-content">
+              <strong>Acompanhe seus resultados</strong>
+              <p>Documentamos sua evolução com fotos antes/durante/depois para que você veja cada etapa da sua transformação.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mockup do app -->
+      <div class="como-visual fade-up delay-2">
+        <div class="como-app-mockup">
+          <div class="mockup-header">
+            <div class="mockup-dot red"></div>
+            <div class="mockup-dot yellow"></div>
+            <div class="mockup-dot green"></div>
+            <span class="mockup-title">Mylena Meira App</span>
+          </div>
+
+          <div style="font-size:.7rem;color:rgba(232,213,183,0.4);letter-spacing:.1em;text-transform:uppercase;margin-bottom:.75rem">
+            Novo agendamento recebido
+          </div>
+
+          <div class="mockup-notif">
+            <div class="mockup-notif-icon"><i class="fa-solid fa-calendar-check"></i></div>
+            <div class="mockup-notif-text">
+              <strong>Agendamento via Site</strong>
+              <span>Sessão de Remoção · 30/06 · 14:00h</span>
+            </div>
+          </div>
+
+          <div class="mockup-notif" style="animation-delay:.5s">
+            <div class="mockup-notif-icon"><i class="fa-solid fa-user-plus"></i></div>
+            <div class="mockup-notif-text">
+              <strong>Nova cliente cadastrada</strong>
+              <span>Cadastrado automaticamente pelo site</span>
+            </div>
+          </div>
+
+          <div style="margin-top:1.25rem;padding-top:1rem;border-top:1px solid rgba(232,213,183,0.08)">
+            <div style="font-size:.65rem;color:rgba(232,213,183,0.35);letter-spacing:.1em;text-transform:uppercase;margin-bottom:.5rem">
+              Sincronizado em tempo real
+            </div>
+            <div style="display:flex;align-items:center;gap:.4rem;color:var(--gold);font-size:.7rem">
+              <i class="fa-solid fa-circle" style="font-size:.4rem;animation:pulse-notif 1.5s infinite"></i>
+              Site ↔ App — Sem conflitos de horário
+            </div>
+          </div>
+        </div>
+
+        <div style="margin-top:1.5rem;text-align:center">
+          <p style="font-size:.75rem;color:rgba(232,213,183,0.4);line-height:1.8">
+            Integração em tempo real via API.<br>
+            Horários bloqueados automaticamente.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     ANTES E DEPOIS
+     ============================================================ -->
+<section class="antes-depois" id="resultados" aria-labelledby="ad-title">
+  <div class="container">
+    <div class="antes-depois-header">
+      <span class="section-label fade-up">Resultados</span>
+      <h2 class="section-title fade-up delay-1" id="ad-title">
+        Transformações <em>reais</em>
+      </h2>
+      <p class="section-subtitle fade-up delay-2" style="margin-inline:auto">
+        Cada resultado é único. Veja algumas das transformações que nossos protocolos proporcionaram.
+      </p>
+    </div>
+
+    <div class="antes-depois-grid">
+      <!-- Card 1 -->
+      <div class="ad-card fade-up delay-1">
+        <div class="ad-images">
+          <div class="ad-img">
+            <div class="ad-placeholder">
+              <svg width="32" height="32" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+                <rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/>
+                <path d="m21 15-5-5L5 21"/>
+              </svg>
+              <span>Foto Antes</span>
+            </div>
+            <span class="ad-label">Antes</span>
+          </div>
+          <div class="ad-img">
+            <div class="ad-placeholder" style="background:linear-gradient(135deg,var(--cream-light),var(--cream))">
+              <svg width="32" height="32" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+                <rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/>
+                <path d="m21 15-5-5L5 21"/>
+              </svg>
+              <span>Foto Depois</span>
+            </div>
+            <span class="ad-label">Depois</span>
+          </div>
+          <div class="ad-divider">
+            <div class="ad-divider-icon"><i class="fa-solid fa-arrows-left-right" style="font-size:.5rem"></i></div>
+          </div>
+        </div>
+        <div class="ad-info">
+          <h4>Região Abdominal</h4>
+          <p>10 sessões · Tratamento Pós-Gestação</p>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="ad-card fade-up delay-2">
+        <div class="ad-images">
+          <div class="ad-img">
+            <div class="ad-placeholder">
+              <svg width="32" height="32" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+                <rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/>
+                <path d="m21 15-5-5L5 21"/>
+              </svg>
+              <span>Foto Antes</span>
+            </div>
+            <span class="ad-label">Antes</span>
+          </div>
+          <div class="ad-img">
+            <div class="ad-placeholder" style="background:linear-gradient(135deg,var(--cream-light),var(--cream))">
+              <svg width="32" height="32" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+                <rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/>
+                <path d="m21 15-5-5L5 21"/>
+              </svg>
+              <span>Foto Depois</span>
+            </div>
+            <span class="ad-label">Depois</span>
+          </div>
+          <div class="ad-divider">
+            <div class="ad-divider-icon"><i class="fa-solid fa-arrows-left-right" style="font-size:.5rem"></i></div>
+          </div>
+        </div>
+        <div class="ad-info">
+          <h4>Coxas e Glúteos</h4>
+          <p>5 sessões · Pacote 5 Sessões</p>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="ad-card fade-up delay-3">
+        <div class="ad-images">
+          <div class="ad-img">
+            <div class="ad-placeholder">
+              <svg width="32" height="32" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+                <rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/>
+                <path d="m21 15-5-5L5 21"/>
+              </svg>
+              <span>Foto Antes</span>
+            </div>
+            <span class="ad-label">Antes</span>
+          </div>
+          <div class="ad-img">
+            <div class="ad-placeholder" style="background:linear-gradient(135deg,var(--cream-light),var(--cream))">
+              <svg width="32" height="32" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+                <rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/>
+                <path d="m21 15-5-5L5 21"/>
+              </svg>
+              <span>Foto Depois</span>
+            </div>
+            <span class="ad-label">Depois</span>
+          </div>
+          <div class="ad-divider">
+            <div class="ad-divider-icon"><i class="fa-solid fa-arrows-left-right" style="font-size:.5rem"></i></div>
+          </div>
+        </div>
+        <div class="ad-info">
+          <h4>Braços</h4>
+          <p>8 sessões · Tratamento Intensivo</p>
+        </div>
+      </div>
+    </div>
+
+    <div style="text-align:center;margin-top:3rem" class="fade-up">
+      <p style="font-size:.8rem;color:var(--gray-warm);margin-bottom:1.5rem">
+        <i class="fa-solid fa-circle-info" style="color:var(--gold)"></i>
+        Resultados individuais podem variar. Adicione suas fotos reais no painel admin do app.
+      </p>
+      <a href="#agendamento" class="btn btn-outline" data-scroll-to="agendamento">
+        Quero Meu Resultado <i class="fa-solid fa-arrow-right"></i>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     AGENDAMENTO
+     ============================================================ -->
+<section class="agendamento" id="agendamento" aria-labelledby="ag-title">
+  <div class="container">
+    <div class="agendamento-grid">
+      <!-- Info lateral -->
+      <div class="agendamento-info">
+        <span class="section-label fade-up">Agendamento Online</span>
+        <h2 class="section-title fade-up delay-1" id="ag-title">
+          Agende sua <em>consulta</em> agora
+        </h2>
+        <p class="section-subtitle fade-up delay-2">
+          Processo simples e rápido. Escolha o procedimento, a data e o horário ideal para você.
+          Confirmação instantânea!
+        </p>
+
+        <div class="agendamento-features fade-up delay-3">
+          <div class="ag-feature">
+            <div class="ag-feature-icon"><i class="fa-solid fa-bolt"></i></div>
+            <span>Confirmação imediata — sem esperar ligação</span>
+          </div>
+          <div class="ag-feature">
+            <div class="ag-feature-icon"><i class="fa-solid fa-lock"></i></div>
+            <span>Horário bloqueado em tempo real no sistema</span>
+          </div>
+          <div class="ag-feature">
+            <div class="ag-feature-icon"><i class="fa-brands fa-whatsapp" style="color:#25D366"></i></div>
+            <span>Lembrete via WhatsApp antes da sessão</span>
+          </div>
+          <div class="ag-feature">
+            <div class="ag-feature-icon"><i class="fa-solid fa-rotate-left"></i></div>
+            <span>Reagendamento fácil — fale pelo WhatsApp</span>
+          </div>
+        </div>
+
+        <div style="margin-top:2.5rem;padding:1.5rem;background:var(--cream-light);border-left:3px solid var(--gold)" class="fade-up delay-4">
+          <p style="font-size:.82rem;color:var(--gray-warm);line-height:1.8">
+            <strong style="color:var(--dark);display:block;margin-bottom:.4rem">
+              <i class="fa-solid fa-circle-check" style="color:var(--gold)"></i>
+              Primeira consulta gratuita
+            </strong>
+            A Avaliação Inicial é gratuita e sem compromisso. Conheça o tratamento ideal para você.
+          </p>
+        </div>
+      </div>
+
+      <!-- Widget de agendamento -->
+      <div id="booking-widget" class="booking-widget fade-up delay-2">
+        <!-- Abas de progresso -->
+        <div class="booking-progress" role="tablist">
+          <div class="booking-step-tab active" role="tab" aria-selected="true">
+            <span class="step-num">1</span> Serviço
+          </div>
+          <div class="booking-step-tab" role="tab">
+            <span class="step-num">2</span> Data
+          </div>
+          <div class="booking-step-tab" role="tab">
+            <span class="step-num">3</span> Dados
+          </div>
+        </div>
+
+        <div class="booking-body">
+
+          <!-- STEP 1 — Serviço -->
+          <div class="booking-step" id="step-1">
+            <p style="font-size:.82rem;color:var(--gray-warm);margin-bottom:1.25rem">
+              Escolha o procedimento desejado:
+            </p>
+            <div id="booking-services-list" class="booking-services-list"></div>
+            <div class="booking-actions">
+              <span></span>
+              <button id="btn-to-step2" class="btn btn-primary" disabled style="opacity:.4">
+                Próximo <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- STEP 2 — Data e horário -->
+          <div class="booking-step" id="step-2" style="display:none">
+            <div class="booking-calendar">
+              <!-- Header calendário -->
+              <div class="cal-header">
+                <span class="cal-month" id="cal-month"></span>
+                <div class="cal-nav">
+                  <button id="cal-prev" aria-label="Mês anterior"><i class="fa-solid fa-chevron-left"></i></button>
+                  <button id="cal-next" aria-label="Próximo mês"><i class="fa-solid fa-chevron-right"></i></button>
+                </div>
+              </div>
+
+              <!-- Dias da semana -->
+              <div class="cal-grid-header" aria-label="Dias da semana">
+                <span>Dom</span><span>Seg</span><span>Ter</span>
+                <span>Qua</span><span>Qui</span><span>Sex</span><span>Sáb</span>
+              </div>
+
+              <!-- Grid de dias -->
+              <div class="cal-grid" id="cal-grid" role="grid" aria-label="Calendário"></div>
+
+              <!-- Horários disponíveis -->
+              <div class="slots-section" id="slots-container" style="display:none">
+                <div class="slots-title">Horários disponíveis</div>
+                <div class="slots-grid" id="slots-grid"></div>
+              </div>
+            </div>
+
+            <div class="booking-actions">
+              <button class="btn-back" id="btn-back-1">
+                <i class="fa-solid fa-arrow-left"></i> Voltar
+              </button>
+              <button id="btn-to-step3" class="btn btn-primary" disabled style="opacity:.4">
+                Próximo <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- STEP 3 — Dados pessoais -->
+          <div class="booking-step" id="step-3" style="display:none">
+            <!-- Resumo do agendamento -->
+            <div class="booking-summary">
+              <div class="booking-summary-title">Resumo do Agendamento</div>
+              <div class="booking-summary-item">
+                <span>Procedimento</span>
+                <span id="sum-service">—</span>
+              </div>
+              <div class="booking-summary-item">
+                <span>Data</span>
+                <span id="sum-date">—</span>
+              </div>
+              <div class="booking-summary-item">
+                <span>Horário</span>
+                <span id="sum-time">—</span>
+              </div>
+              <div class="booking-summary-item">
+                <span>Valor</span>
+                <span id="sum-price">—</span>
+              </div>
+            </div>
+
+            <!-- Formulário -->
+            <form id="booking-form" novalidate>
+              <div class="form-group">
+                <label class="form-label" for="inp-name">Nome Completo *</label>
+                <input type="text" id="inp-name" class="form-input"
+                       placeholder="Seu nome completo" autocomplete="name" required>
+                <span class="form-error" id="err-name"></span>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="inp-phone">WhatsApp / Telefone *</label>
+                <input type="tel" id="inp-phone" class="form-input"
+                       placeholder="(00) 00000-0000" autocomplete="tel" required>
+                <span class="form-error" id="err-phone"></span>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="inp-email">E-mail (opcional)</label>
+                <input type="email" id="inp-email" class="form-input"
+                       placeholder="seu@email.com" autocomplete="email">
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="inp-notes">Observações (opcional)</label>
+                <input type="text" id="inp-notes" class="form-input"
+                       placeholder="Alguma informação que devemos saber?">
+              </div>
+            </form>
+            <span class="form-error" id="err-submit" style="display:block;text-align:center;margin-top:.5rem"></span>
+
+            <div class="booking-actions">
+              <button class="btn-back" id="btn-back-2">
+                <i class="fa-solid fa-arrow-left"></i> Voltar
+              </button>
+              <button id="btn-submit" class="btn btn-primary">
+                <i class="fa-solid fa-check"></i> Confirmar Agendamento
+              </button>
+            </div>
+          </div>
+
+          <!-- SUCESSO -->
+          <div id="booking-success" class="booking-success" style="display:none">
+            <div class="booking-success-icon">
+              <i class="fa-solid fa-check"></i>
+            </div>
+            <h3>Agendamento Confirmado!</h3>
+            <p>
+              Olá, <strong id="success-name"></strong>! Seu agendamento de
+              <strong id="success-service"></strong> foi registrado para
+              <strong id="success-date"></strong> às <strong id="success-time"></strong>.<br><br>
+              Em breve entraremos em contato via WhatsApp para confirmar. Até lá! 💛
+            </p>
+            <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap">
+              <a href="#" id="btn-whatsapp" class="btn btn-primary" target="_blank" rel="noopener">
+                <i class="fa-brands fa-whatsapp"></i> Falar no WhatsApp
+              </a>
+              <button id="btn-novo" class="btn btn-outline">
+                Novo Agendamento
+              </button>
+            </div>
+          </div>
+
+        </div><!-- /booking-body -->
+      </div><!-- /booking-widget -->
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     DEPOIMENTOS
+     ============================================================ -->
+<section class="depoimentos" id="depoimentos" aria-labelledby="dep-title">
+  <div class="container">
+    <div class="depoimentos-header">
+      <span class="section-label fade-up" style="color:var(--gold)">Depoimentos</span>
+      <h2 class="section-title fade-up delay-1" id="dep-title">
+        O que nossas clientes <em>dizem</em>
+      </h2>
+    </div>
+
+    <div class="depoimentos-track" role="list">
+      <article class="depo-card" role="listitem">
+        <div class="depo-stars" aria-label="5 estrelas">
+          <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+        </div>
+        <p class="depo-text">"Minha autoestima voltou completamente! Fiz 10 sessões e o resultado foi além do que eu esperava. As estrias da gestação praticamente sumiram. Recomendo muito!"</p>
+        <div class="depo-author">
+          <div class="depo-avatar">A</div>
+          <div>
+            <div class="depo-author-name">Ana Carolina S.</div>
+            <div class="depo-author-meta">Tratamento Pós-Gestação · 10 sessões</div>
+          </div>
+        </div>
+      </article>
+
+      <article class="depo-card" role="listitem">
+        <div class="depo-stars" aria-label="5 estrelas">
+          <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+        </div>
+        <p class="depo-text">"Profissional incrível! O atendimento é super cuidadoso e os resultados aparecem rápido. Já na 4ª sessão vi diferença significativa. Vale muito!"</p>
+        <div class="depo-author">
+          <div class="depo-avatar">J</div>
+          <div>
+            <div class="depo-author-name">Juliana M.</div>
+            <div class="depo-author-meta">Pacote 5 Sessões · Coxas</div>
+          </div>
+        </div>
+      </article>
+
+      <article class="depo-card" role="listitem">
+        <div class="depo-stars" aria-label="5 estrelas">
+          <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+        </div>
+        <p class="depo-text">"Tinha vergonha de usar biquíni. Depois do tratamento com a Mylena, fui à praia com total confiança pela primeira vez em anos. Simplesmente transformador!"</p>
+        <div class="depo-author">
+          <div class="depo-avatar">F</div>
+          <div>
+            <div class="depo-author-name">Fernanda L.</div>
+            <div class="depo-author-meta">Pacote 10 Sessões · Abdômen e Coxas</div>
+          </div>
+        </div>
+      </article>
+
+      <article class="depo-card" role="listitem">
+        <div class="depo-stars" aria-label="5 estrelas">
+          <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+        </div>
+        <p class="depo-text">"O sistema de agendamento online é super prático! Agendei pelo site às 23h e no dia seguinte já estava confirmado. Profissionalismo do início ao fim."</p>
+        <div class="depo-author">
+          <div class="depo-avatar">P</div>
+          <div>
+            <div class="depo-author-name">Patricia O.</div>
+            <div class="depo-author-meta">Sessão de Revisão · Cliente recorrente</div>
+          </div>
+        </div>
+      </article>
+
+      <article class="depo-card" role="listitem">
+        <div class="depo-stars" aria-label="5 estrelas">
+          <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+        </div>
+        <p class="depo-text">"Resultado acima das expectativas! A Mylena é extremamente técnica e cuidadosa. Explica cada passo e tira todas as dúvidas. Me sinto em boas mãos sempre."</p>
+        <div class="depo-author">
+          <div class="depo-avatar">R</div>
+          <div>
+            <div class="depo-author-name">Renata B.</div>
+            <div class="depo-author-meta">Tratamento Pós-Gestação · 8 sessões</div>
+          </div>
+        </div>
+      </article>
+    </div>
+
+    <div class="depoimentos-dots" role="tablist" aria-label="Depoimentos">
+      <button class="depo-dot active" aria-label="Depoimento 1"></button>
+      <button class="depo-dot" aria-label="Depoimento 2"></button>
+      <button class="depo-dot" aria-label="Depoimento 3"></button>
+      <button class="depo-dot" aria-label="Depoimento 4"></button>
+      <button class="depo-dot" aria-label="Depoimento 5"></button>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     FAQ
+     ============================================================ -->
+<section class="faq" id="faq" aria-labelledby="faq-title">
+  <div class="container">
+    <div class="faq-grid">
+      <div>
+        <span class="section-label fade-up">Dúvidas</span>
+        <h2 class="section-title fade-up delay-1" id="faq-title">
+          Perguntas <em>frequentes</em>
+        </h2>
+        <p class="section-subtitle fade-up delay-2">
+          Ainda tem dúvidas? Entre em contato pelo WhatsApp — respondemos rapidinho!
+        </p>
+        <a href="https://wa.me/5511952292843" class="btn btn-primary fade-up delay-3" style="margin-top:2rem"
+           id="btn-whatsapp-faq" data-clinic-whatsapp target="_blank" rel="noopener">
+          <i class="fa-brands fa-whatsapp"></i> Falar no WhatsApp
+        </a>
+      </div>
+
+      <div class="faq-list fade-up delay-2">
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            O tratamento é doloroso?
+            <span class="faq-icon"><i class="fa-solid fa-plus"></i></span>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              O tratamento é minimamente invasivo e a grande maioria das clientes não relata dor significativa. Pode haver uma leve sensação de calor ou formigamento durante a sessão, que é totalmente tolerável. O conforto da paciente é sempre nossa prioridade.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            Quantas sessões são necessárias para ver resultado?
+            <span class="faq-icon"><i class="fa-solid fa-plus"></i></span>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              Os primeiros resultados já aparecem na primeira sessão! O protocolo completo varia de 1 a 10 sessões — cada corpo responde de forma única, e isso é completamente normal. Fatores como tipo, coloração e extensão das estrias, além das características individuais de cada pele, influenciam diretamente na evolução. Na avaliação inicial gratuita, analisamos seu caso e definimos juntas o plano mais eficaz para você.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            Quanto tempo dura cada sessão?
+            <span class="faq-icon"><i class="fa-solid fa-plus"></i></span>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              As sessões variam de 60 a 90 minutos dependendo do procedimento e da área tratada. O agendamento já mostra a duração exata de cada serviço para você planejar seu dia.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            Em quanto tempo vejo os resultados?
+            <span class="faq-icon"><i class="fa-solid fa-plus"></i></span>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              Os primeiros resultados começam a aparecer a partir da 3ª ou 4ª sessão, mas o resultado mais expressivo é visível ao final do protocolo completo. A evolução é documentada com fotos em cada sessão para você acompanhar a transformação.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            O resultado é permanente?
+            <span class="faq-icon"><i class="fa-solid fa-plus"></i></span>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              Sim! O resultado é permanente para as estrias tratadas. No entanto, novas estrias podem surgir em decorrência de gestações futuras, variações rápidas de peso ou puberdade. Por isso, recomendamos sessões de manutenção anuais.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            Como funciona o agendamento online?
+            <span class="faq-icon"><i class="fa-solid fa-plus"></i></span>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              Basta escolher o procedimento, selecionar a data e horário disponíveis e preencher seus dados. O agendamento é confirmado instantaneamente no nosso sistema e você recebe contato via WhatsApp em breve. Simples, rápido e sem filas!
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     CTA FINAL
+     ============================================================ -->
+<section class="cta-section" style="padding:5rem 0;background:var(--bordeaux);text-align:center;position:relative;overflow:hidden" aria-label="Chamada para ação">
+  <div style="position:absolute;top:-60px;left:-60px;width:200px;height:200px;border:1px solid rgba(232,213,183,0.06);border-radius:50%"></div>
+  <div style="position:absolute;bottom:-40px;right:-40px;width:150px;height:150px;border:1px solid rgba(232,213,183,0.06);border-radius:50%"></div>
+  <div class="container">
+    <span class="section-label fade-up">Comece Hoje</span>
+    <h2 class="section-title fade-up delay-1" style="color:var(--cream);margin-inline:auto;max-width:600px">
+      Sua transformação começa com <em>uma consulta</em>
+    </h2>
+    <p style="font-size:.9rem;color:rgba(232,213,183,0.6);max-width:440px;margin:1rem auto 2.5rem;line-height:1.8" class="fade-up delay-2">
+      Avaliação inicial gratuita. Sem compromisso. Descubra o tratamento ideal para suas estrias.
+    </p>
+    <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap" class="fade-up delay-3">
+      <a href="#agendamento" class="btn btn-cream" data-scroll-to="agendamento">
+        <i class="fa-regular fa-calendar-check"></i> Agendar Agora — É Grátis
+      </a>
+      <a href="https://wa.me/5511952292843" class="btn" style="border:1.5px solid rgba(232,213,183,0.3);color:var(--cream)"
+         data-clinic-whatsapp target="_blank" rel="noopener">
+        <i class="fa-brands fa-whatsapp"></i> Falar pelo WhatsApp
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     RODAPÉ
+     ============================================================ -->
+<footer class="footer" id="contato" role="contentinfo">
+  <div class="container">
+    <div class="footer-grid">
+      <!-- Brand -->
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <svg style="width:50px;height:50px;color:var(--cream)" aria-hidden="true">
+            <use href="#mm-logo"/>
+          </svg>
+        </div>
+        <p class="footer-brand-desc">
+          Especialista em remoção de estrias, dedicada a devolver confiança e autoestima às mulheres através de tratamentos avançados e personalizados.
+        </p>
+        <div class="footer-social">
+          <a href="#" class="footer-social-link" id="footer-ig-link" target="_blank" rel="noopener" aria-label="Instagram">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a href="https://wa.me/5511952292843" class="footer-social-link" data-clinic-whatsapp target="_blank" rel="noopener" aria-label="WhatsApp">
+            <i class="fa-brands fa-whatsapp"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Navegação -->
+      <div>
+        <div class="footer-col-title">Navegação</div>
+        <ul class="footer-links">
+          <li><a href="#inicio"      class="footer-link">Início</a></li>
+          <li><a href="#sobre"       class="footer-link">Sobre Mim</a></li>
+          <li><a href="#servicos"    class="footer-link">Serviços</a></li>
+          <li><a href="#resultados"  class="footer-link">Resultados</a></li>
+          <li><a href="#depoimentos" class="footer-link">Depoimentos</a></li>
+          <li><a href="#agendamento" class="footer-link">Agendamento</a></li>
+        </ul>
+      </div>
+
+      <!-- Serviços -->
+      <div>
+        <div class="footer-col-title">Tratamentos</div>
+        <ul class="footer-links" id="footer-services">
+          <li><a href="#agendamento" class="footer-link">Avaliação Inicial</a></li>
+          <li><a href="#agendamento" class="footer-link">Sessão Individual</a></li>
+          <li><a href="#agendamento" class="footer-link">Pacote 5 Sessões</a></li>
+          <li><a href="#agendamento" class="footer-link">Pacote 10 Sessões</a></li>
+          <li><a href="#agendamento" class="footer-link">Pós-Gestação</a></li>
+        </ul>
+      </div>
+
+      <!-- Contato -->
+      <div>
+        <div class="footer-col-title">Contato</div>
+        <div class="footer-contact-item">
+          <i class="fa-solid fa-phone footer-contact-icon"></i>
+          <a id="footer-phone" href="tel:+5511952292843" class="footer-link">(11) 95229-2843</a>
+        </div>
+        <div class="footer-contact-item">
+          <i class="fa-solid fa-envelope footer-contact-icon"></i>
+          <span id="footer-email">mylena.meira@hotmail.com</span>
+        </div>
+        <div class="footer-contact-item">
+          <i class="fa-brands fa-instagram footer-contact-icon"></i>
+          <a id="footer-ig" href="https://instagram.com/estrias.mylenameira" target="_blank" rel="noopener" class="footer-link">
+            @estrias.mylenameira
+          </a>
+        </div>
+        <div class="footer-contact-item">
+          <i class="fa-solid fa-location-dot footer-contact-icon"></i>
+          <span id="footer-address">A definir</span>
+        </div>
+        <a href="#agendamento" class="btn btn-outline" style="margin-top:1.25rem;border-color:rgba(232,213,183,0.2);color:var(--cream);font-size:.7rem;padding:.65rem 1.25rem" data-scroll-to="agendamento">
+          Agendar Agora
+        </a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span class="footer-copyright">
+        © 2026 Mylena Meira — Especialista em Remoção de Estrias. Todos os direitos reservados.
+      </span>
+      <span style="font-size:.72rem;color:rgba(232,213,183,0.2)">
+        Desenvolvido com dedicação
+      </span>
+    </div>
+  </div>
+</footer>
+
+<!-- WhatsApp flutuante -->
+<div class="whatsapp-float">
+  <div class="whatsapp-tooltip">Falar pelo WhatsApp</div>
+  <a href="https://wa.me/5511952292843" class="whatsapp-bubble" data-clinic-whatsapp target="_blank" rel="noopener" aria-label="WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+</div>
+
+<!-- Scripts -->
+<script src="js/booking.js"></script>
+<script src="js/main.js"></script>
+
+<!-- Carrega cards de serviços na seção de tratamentos -->
+<script>
+  (async function loadServicosSection() {
+    try {
+      const res  = await fetch(`${window.API_BASE}/api/public/services`);
+      const json = await res.json();
+      const grid = document.getElementById('servicos-section-grid');
+      if (!grid || !json.data?.length) return;
+
+      const icons = [
+        'fa-spa','fa-star','fa-wand-magic-sparkles','fa-heart','fa-leaf','fa-gem','fa-seedling'
+      ];
+
+      grid.innerHTML = json.data.map((s, i) => `
+        <div class="servico-card fade-up" style="transition-delay:${i*0.1}s">
+          <div class="servico-icon">
+            <i class="fa-solid ${icons[i % icons.length]}"></i>
+          </div>
+          <div class="servico-name">${s.name}</div>
+          <div class="servico-desc">
+            ${s.description || 'Tratamento especializado com protocolo exclusivo e tecnologia avançada para resultados comprovados.'}
+          </div>
+          <div class="servico-footer">
+            <div>
+              <div class="servico-price">
+                ${parseFloat(s.price) > 0
+                  ? new Intl.NumberFormat('pt-BR',{style:'currency',currency:'BRL'}).format(s.price)
+                  : 'Gratuito'}
+              </div>
+              <div class="servico-duration">${s.duration} min${s.sessions_count > 1 ? ' · ' + s.sessions_count + ' sessões' : ''}</div>
+            </div>
+            <span class="servico-cta" onclick="document.getElementById('agendamento').scrollIntoView({behavior:'smooth'})">
+              Agendar <i class="fa-solid fa-arrow-right"></i>
+            </span>
+          </div>
+        </div>
+      `).join('');
+
+      // Re-observa os novos elementos para animação
+      document.querySelectorAll('#servicos-section-grid .fade-up').forEach(el => {
+        fadeObserver?.observe(el);
+      });
+    } catch {}
+  })();
+</script>
+
+</body>
+</html>

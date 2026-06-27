@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "mylena-site",
+      "runtimeExecutable": "node",
+      "runtimeArgs": ["serve-site.js"],
+      "port": 3002
+    }
+  ]
+}
