@@ -529,6 +529,7 @@ button { cursor: pointer; font-family: var(--font-sans); border: none; backgroun
   padding: 0.9rem 1.4rem;
   border-radius: 12px;
   display: flex;
+  text-align: center;
   align-items: center;
   gap: 0.7rem;
   font-size: 0.78rem;
