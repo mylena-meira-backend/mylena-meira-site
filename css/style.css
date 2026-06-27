@@ -916,6 +916,74 @@ button { cursor: pointer; font-family: var(--font-sans); border: none; backgroun
 }
 .servico-card:hover .servico-cta { opacity: 1; color: var(--gold); }
 
+/* Card destaque (pacote com desconto) */
+.servico-card--destaque {
+  border-color: rgba(201, 169, 110, 0.35);
+  background: rgba(201, 169, 110, 0.06);
+  position: relative;
+}
+
+/* Badge de desconto (% OFF) */
+.servico-desconto-badge {
+  position: absolute;
+  top: -1px;
+  right: 1.5rem;
+  background: var(--bordeaux);
+  color: var(--cream);
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  padding: 0.3rem 0.7rem;
+  border-radius: 0 0 6px 6px;
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+/* Preço original riscado + economia */
+.servico-economia {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.2rem;
+  flex-wrap: wrap;
+}
+.servico-preco-original {
+  font-size: 0.78rem;
+  color: rgba(232, 213, 183, 0.35);
+  text-decoration: line-through;
+}
+.servico-economia-valor {
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: #5abf7a;
+  background: rgba(90, 191, 122, 0.12);
+  padding: 0.1rem 0.45rem;
+  border-radius: 20px;
+}
+
+/* Desconto no widget de agendamento (step 1) */
+.bsi-desconto {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin-top: 0.3rem;
+  flex-wrap: wrap;
+}
+.bsi-preco-original {
+  font-size: 0.68rem;
+  color: var(--gray-light);
+  text-decoration: line-through;
+}
+.bsi-economia {
+  font-size: 0.65rem;
+  font-weight: 600;
+  color: #3d9e5f;
+  background: rgba(61, 158, 95, 0.1);
+  padding: 0.1rem 0.4rem;
+  border-radius: 20px;
+}
+
 /* Loading skeleton para serviços */
 .servico-card.skeleton .servico-name,
 .servico-card.skeleton .servico-desc,

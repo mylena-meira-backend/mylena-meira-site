@@ -1080,12 +1080,37 @@
       const grid = document.getElementById('servicos-section-grid');
       if (!grid || !json.data?.length) return;
 
+      const fmt = v => new Intl.NumberFormat('pt-BR',{style:'currency',currency:'BRL'}).format(v);
+
       const icons = [
         'fa-spa','fa-star','fa-wand-magic-sparkles','fa-heart','fa-leaf','fa-gem','fa-seedling'
       ];
 
-      grid.innerHTML = json.data.map((s, i) => `
-        <div class="servico-card fade-up" style="transition-delay:${i*0.1}s">
+      // Preço da sessão avulsa (para calcular economia dos pacotes)
+      const singleSession = json.data.find(s => s.sessions_count === 1 && parseFloat(s.price) > 0);
+      const singlePrice   = singleSession ? parseFloat(singleSession.price) : 0;
+
+      grid.innerHTML = json.data.map((s, i) => {
+        const price    = parseFloat(s.price);
+        const isPackage = s.sessions_count > 1 && singlePrice > 0;
+        const fullPrice = isPackage ? singlePrice * s.sessions_count : 0;
+        const savings   = isPackage ? fullPrice - price : 0;
+        const discPct   = isPackage ? Math.round((savings / fullPrice) * 100) : 0;
+
+        const discountBadge = isPackage ? `
+          <div class="servico-desconto-badge">
+            <i class="fa-solid fa-tag"></i> ${discPct}% OFF
+          </div>` : '';
+
+        const savingsLine = isPackage ? `
+          <div class="servico-economia">
+            <span class="servico-preco-original">${fmt(fullPrice)}</span>
+            <span class="servico-economia-valor">Economize ${fmt(savings)}</span>
+          </div>` : '';
+
+        return `
+        <div class="servico-card fade-up${isPackage ? ' servico-card--destaque' : ''}" style="transition-delay:${i*0.1}s">
+          ${discountBadge}
           <div class="servico-icon">
             <i class="fa-solid ${icons[i % icons.length]}"></i>
           </div>
@@ -1095,10 +1120,9 @@
           </div>
           <div class="servico-footer">
             <div>
+              ${savingsLine}
               <div class="servico-price">
-                ${parseFloat(s.price) > 0
-                  ? new Intl.NumberFormat('pt-BR',{style:'currency',currency:'BRL'}).format(s.price)
-                  : 'Gratuito'}
+                ${price > 0 ? fmt(price) : 'Gratuito'}
               </div>
               <div class="servico-duration">${s.duration} min${s.sessions_count > 1 ? ' · ' + s.sessions_count + ' sessões' : ''}</div>
             </div>
@@ -1106,8 +1130,8 @@
               Agendar <i class="fa-solid fa-arrow-right"></i>
             </span>
           </div>
-        </div>
-      `).join('');
+        </div>`;
+      }).join('');
 
       // Re-observa os novos elementos para animação
       document.querySelectorAll('#servicos-section-grid .fade-up').forEach(el => {

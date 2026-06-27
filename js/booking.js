@@ -129,19 +129,37 @@ const BookingWidget = {
         `<p style="color:var(--gray-warm);font-size:.82rem">Nenhum serviço disponível no momento.</p>`;
       return;
     }
-    this.el.servicesList.innerHTML = this.state.services.map(s => `
+
+    const singleSession = this.state.services.find(s => s.sessions_count === 1 && parseFloat(s.price) > 0);
+    const singlePrice   = singleSession ? parseFloat(singleSession.price) : 0;
+
+    this.el.servicesList.innerHTML = this.state.services.map(s => {
+      const price     = parseFloat(s.price);
+      const isPackage = s.sessions_count > 1 && singlePrice > 0;
+      const fullPrice = isPackage ? singlePrice * s.sessions_count : 0;
+      const savings   = isPackage ? fullPrice - price : 0;
+      const discPct   = isPackage ? Math.round((savings / fullPrice) * 100) : 0;
+
+      const discountBlock = isPackage ? `
+        <div class="bsi-desconto">
+          <span class="bsi-preco-original">${this.formatPrice(fullPrice)}</span>
+          <span class="bsi-economia">${discPct}% OFF · Economize ${this.formatPrice(savings)}</span>
+        </div>` : '';
+
+      return `
       <div class="booking-service-item" data-id="${s.id}" onclick="BookingWidget.selectService('${s.id}')">
-        <div>
+        <div style="flex:1;min-width:0">
           <div class="bsi-name">${s.name}</div>
           <div class="bsi-meta">
             ${s.duration} min
             ${s.sessions_count > 1 ? ` · ${s.sessions_count} sessões` : ''}
             ${s.description ? ` · ${s.description.slice(0,60)}…` : ''}
           </div>
+          ${discountBlock}
         </div>
-        <div class="bsi-price">${parseFloat(s.price) > 0 ? this.formatPrice(s.price) : 'Gratuito'}</div>
-      </div>
-    `).join('');
+        <div class="bsi-price" style="margin-left:.75rem;flex-shrink:0">${price > 0 ? this.formatPrice(price) : 'Gratuito'}</div>
+      </div>`;
+    }).join('');
   },
 
   selectService(id) {
